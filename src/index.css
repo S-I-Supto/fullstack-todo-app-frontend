@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Epilogue:wght@500;700&family=Lato:wght@300&family=Montserrat:wght@100;300;400&family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Epilogue:wght@500;700&family=Lato:wght@300&family=Montserrat:wght@100;300;600&family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Epilogue:wght@500;700&family=Lato:wght@300&family=Montserrat:wght@100;300;600&family=Poppins:wght@200;300&family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .parent {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .header {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 1.2px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .text-box {
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .input-text {
+    width: 517px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding: 2px 5px;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    background: #00ED64;
+    padding: 8px 40px;
+    letter-spacing: 1.2px;
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+  }
+
+  .todo-ul {
+    margin-top: 24px;
+  }
+
+  .todo-list {
+    position: relative;
+    margin-top: 20px;
+    width: 558px;
+    min-height: 40px;
+    background: #251749;
+    color: white;
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 3.2px;
+  }
+
+  .display-todo-data {
+    width: 80%;
+  }
+
+  .todo-data {
+    font-size: 18px;
+    letter-spacing: 1.09px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .todo-icons {
+    width: 20%;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: 717px) {
+
+    .input-text,
+    .todo-list {
+      width: 409px;
+    }
+
+    .todo-list {
+      margin-top: 19px;
+      border-radius: 2.8px;
+    }
+
+    .todo-data {
+      font-size: 17px;
+    }
+
+    .btn {
+      padding: 9px 31px;
+      letter-spacing: 1.1px;
+      font-size: 19px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 593px) {
+
+    .input-text,
+    .todo-list {
+      width: 307px;
+      font-size: 20px;
+    }
+
+    .todo-list {
+      margin-top: 18px;
+      border-radius: 2.4px;
+    }
+
+    .todo-data {
+      font-size: 16.2px;
+    }
+
+    .btn {
+      padding: 9px 25px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    .input-text,
+    .todo-list {
+      width: 250px;
+      font-size: 18.8px;
+    }
+
+    .todo-list {
+      margin-top: 16px;
+      border-radius: 2px;
+    }
+
+    .todo-data {
+      font-size: 15px;
+    }
+
+    .btn {
+      padding: 9px 20px;
+      font-size: 17.8px;
+    }
+
+  }
